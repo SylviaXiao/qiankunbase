@@ -131,7 +131,7 @@ module.exports = {
 
   devServer: {
     // development server port 8000
-    port: 4446,
+    port: 4447,
     // 微应用的 devTools 中开启开启 hot、disableHostCheck
     hot: true,
     disableHostCheck: true,
@@ -140,7 +140,7 @@ module.exports = {
       errors: true
     },
     headers: {
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*'      //因为qiankun内部请求都是fetch来请求资源，所以子应用必须允许跨域
     }
     // proxy: {
     //   '/api': {
