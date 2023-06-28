@@ -6,7 +6,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: window.__POWERED_BY_QIANKUN__ ? '/fastdp' : '/',
+  base: window.__POWERED_BY_QIANKUN__ ? '/' : '/',
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRouterMap
 })
