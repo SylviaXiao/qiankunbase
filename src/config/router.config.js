@@ -39,183 +39,183 @@ export const asyncRouterMap = [
           }
         ]
       },
-      // {
-      //   path: '/oa',
-      //   name: 'oa',
-      //   component: RouteView,
-      //   meta: { title: '审批', icon: 'book' },
-      //   redirect: '/myApproval',
-      //   children: [
-      //     {
-      //       path: '/workflow',
-      //       name: 'workflow',
-      //       component: RouteView,
-      //       meta: { title: '审批', icon: 'caret-down' },
-      //       children: [
-      //         {
-      //           path: '/approvalList',
-      //           name: 'approvalList',
-      //           component: () => import('@/views/oa/admin/approvalList.vue'),
-      //           meta: { title: '流程配置', keepAlive: true, permission: ['fast:workflow:view', 'fast:mode:view'] }
-      //         },
-      //         {
-      //           path: '/approvalNew/:id',
-      //           name: 'approvalNew',
-      //           component: () => import('@/views/oa/admin/approver.vue'),
-      //           meta: {
-      //             hidden: true,
-      //             keepAlive: false,
-      //             title: '流程设计'
-      //           }
-      //         },
-      //         {
-      //           path: '/approvalFormList',
-      //           name: 'approvalFormList',
-      //           component: () => import('@/views/oa/admin/approvalFormList.vue'),
-      //           meta: { title: '待办审批', keepAlive: true }
-      //         },
-      //         {
-      //           path: '/myApproval',
-      //           name: 'myApproval',
-      //           component: () => import('@/views/oa/admin/myApproval.vue'),
-      //           meta: { title: '发起审批', keepAlive: true }
-      //         },
-      //         {
-      //           path: '/formNew/:procdefId',
-      //           name: 'formNew',
-      //           component: () => import('@/views/oa/form/index.vue'),
-      //           meta: {
-      //             hidden: true,
-      //             keepAlive: false,
-      //             title: '审批表单'
-      //           }
-      //         },
-      //         {
-      //           path: '/formDraft/:procdefId',
-      //           name: 'formDraft',
-      //           component: () => import('@/views/oa/form/form.vue'),
-      //           meta: {
-      //             hidden: true,
-      //             keepAlive: false,
-      //             title: '审批表单'
-      //           }
-      //         },
-      //         {
-      //           path: '/previewNew',
-      //           name: 'previewNew',
-      //           component: () => import('@/views/oa/custom/preview.vue'),
-      //           meta: {
-      //             hidden: true,
-      //             keepAlive: true
-      //           }
-      //         },
-      //         {
-      //           path: '/jsxPreviewNew',
-      //           name: 'jsxPreviewNew',
-      //           component: () => import('@/views/oa/custom/jsxPreview.vue'),
-      //           meta: {
-      //             hidden: true,
-      //             keepAlive: true,
-      //             title: '表单预览'
-      //           }
-      //         },
-      //         {
-      //           path: '/flowlineEdit/:id/:type', //id--流程实例id    type--1-复制表单，2-已完成修改表单，其他，3-过期重提
-      //           name: 'flowlineEdit',
-      //           component: () => import('@/views/oa/view/flowlineEdit.vue'),
-      //           meta: {
-      //             hidden: true,
-      //             keepAlive: false,
-      //             title: '编辑'
-      //           }
-      //         },
-      //         {
-      //           path: '/viewNew/:id/:undoId/:schoolId/:isWait',
-      //           name: 'viewNew',
-      //           component: () => import('@/views/oa/view/index.vue'),
-      //           meta: {
-      //             hidden: true,
-      //             keepAlive: false,
-      //             title: '详情'
-      //           }
-      //         }
-      //       ]
-      //     }
-      //   ]
-      // },
-      // {
-      //   path: '/invoice',
-      //   name: 'invoice',
-      //   component: RouteView,
-      //   meta: { title: '发票', icon: 'book' },
-      //   redirect: '/invoiceLibrary',
-      //   children: [
-      //     {
-      //       path: '/invoiceManageMent',
-      //       name: 'invoiceManageMent',
-      //       component: RouteView,
-      //       meta: { title: '发票管理', icon: 'caret-down' },
-      //       children: [
-      //         {
-      //           path: '/invoiceLibrary',
-      //           name: 'invoiceLibrary',
-      //           component: () => import('@/views/invoice/invoiceLibrary/invoiceLibrary.vue'),
-      //           meta: { title: '发票库', keepAlive: true }
-      //         },
-      //         {
-      //           path: '/myInvoice/:createUser/:createUserName/:companyName',
-      //           name: 'myInvoice',
-      //           component: () => import('@/views/invoice/invoiceLibrary/myInvoice.vue'),
-      //           meta: { title: '发票明细', keepAlive: true, hidden: true }
-      //         },
-      //         {
-      //           path: '/uploadMyInvoice/:createUser/:createUserName/:companyName',
-      //           name: 'uploadMyInvoice',
-      //           component: () => import('@/views/invoice/invoiceLibrary/uploadMyInvoice.vue'),
-      //           meta: { title: '上传明细', keepAlive: true, hidden: true }
-      //         },
-      //         {
-      //           path: '/invoiceChecked',
-      //           name: 'invoiceChecked',
-      //           component: () => import('@/views/invoice/invoiceLibrary/invoiceChecked.vue'),
-      //           meta: { title: '发票再次验真', keepAlive: true, hidden: true }
-      //         },
-      //         {
-      //           path: '/invoiceReject',
-      //           name: 'invoiceReject',
-      //           component: () => import('@/views/invoice/invoiceLibrary/invoiceReject.vue'),
-      //           meta: { title: '发票管理', keepAlive: true, hidden: true }
-      //         },
-      //         {
-      //           path: '/dayTotalMoneyDetails/:createUserName/:totalMoney/:procinstIds',
-      //           name: 'dayTotalMoneyDetails',
-      //           component: () => import('@/views/invoice/invoiceLibrary/dayTotalMoneyDetails.vue'),
-      //           meta: { title: '抵票报销总额', keepAlive: true, hidden: true }
-      //         }
-      //       ]
-      //     }
-      //   ]
-      // },
-      // //system
-      // {
-      //   path: '/system',
-      //   name: 'system',
-      //   component: RouteView,
-      //   meta: { title: '系统', icon: 'setting', permission: ['system', 'test'] },
-      //   children: [
-      //     {
-      //       path: '/system/systemManage',
-      //       name: 'systemManage',
-      //       meta: { title: '系统管理', icon: 'caret-down', permission: ['system', 'test'] },
-      //       component: { render: h => h('router-view') },
-      //       children: []
-      //     }
-      //   ]
-      // }
+      {
+        path: '/oa',
+        name: 'oa',
+        component: RouteView,
+        meta: { title: '审批', icon: 'book' },
+        redirect: '/myApproval',
+        children: [
+          {
+            path: '/workflow',
+            name: 'workflow',
+            component: RouteView,
+            meta: { title: '审批', icon: 'caret-down' },
+            children: [
+              {
+                path: '/vueApp1/approvalList',
+                name: 'approvalList',
+                component: () => import('@/views/oa/admin/approvalList.vue'),
+                meta: { title: '流程配置', keepAlive: true, permission: ['fast:workflow:view', 'fast:mode:view'] }
+              },
+              {
+                path: '/approvalNew/:id',
+                name: 'approvalNew',
+                component: () => import('@/views/oa/admin/approver.vue'),
+                meta: {
+                  hidden: true,
+                  keepAlive: false,
+                  title: '流程设计'
+                }
+              },
+              {
+                path: '/approvalFormList',
+                name: 'approvalFormList',
+                component: () => import('@/views/oa/admin/approvalFormList.vue'),
+                meta: { title: '待办审批', keepAlive: true }
+              },
+              {
+                path: '/myApproval',
+                name: 'myApproval',
+                component: () => import('@/views/oa/admin/myApproval.vue'),
+                meta: { title: '发起审批', keepAlive: true }
+              },
+              {
+                path: '/formNew/:procdefId',
+                name: 'formNew',
+                component: () => import('@/views/oa/form/index.vue'),
+                meta: {
+                  hidden: true,
+                  keepAlive: false,
+                  title: '审批表单'
+                }
+              },
+              {
+                path: '/formDraft/:procdefId',
+                name: 'formDraft',
+                component: () => import('@/views/oa/form/form.vue'),
+                meta: {
+                  hidden: true,
+                  keepAlive: false,
+                  title: '审批表单'
+                }
+              },
+              {
+                path: '/previewNew',
+                name: 'previewNew',
+                component: () => import('@/views/oa/custom/preview.vue'),
+                meta: {
+                  hidden: true,
+                  keepAlive: true
+                }
+              },
+              {
+                path: '/jsxPreviewNew',
+                name: 'jsxPreviewNew',
+                component: () => import('@/views/oa/custom/jsxPreview.vue'),
+                meta: {
+                  hidden: true,
+                  keepAlive: true,
+                  title: '表单预览'
+                }
+              },
+              {
+                path: '/flowlineEdit/:id/:type', //id--流程实例id    type--1-复制表单，2-已完成修改表单，其他，3-过期重提
+                name: 'flowlineEdit',
+                component: () => import('@/views/oa/view/flowlineEdit.vue'),
+                meta: {
+                  hidden: true,
+                  keepAlive: false,
+                  title: '编辑'
+                }
+              },
+              {
+                path: '/viewNew/:id/:undoId/:schoolId/:isWait',
+                name: 'viewNew',
+                component: () => import('@/views/oa/view/index.vue'),
+                meta: {
+                  hidden: true,
+                  keepAlive: false,
+                  title: '详情'
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        path: '/invoice',
+        name: 'invoice',
+        component: RouteView,
+        meta: { title: '发票', icon: 'book' },
+        redirect: '/invoiceLibrary',
+        children: [
+          {
+            path: '/invoiceManageMent',
+            name: 'invoiceManageMent',
+            component: RouteView,
+            meta: { title: '发票管理', icon: 'caret-down' },
+            children: [
+              {
+                path: '/invoiceLibrary',
+                name: 'invoiceLibrary',
+                component: () => import('@/views/invoice/invoiceLibrary/invoiceLibrary.vue'),
+                meta: { title: '发票库', keepAlive: true }
+              },
+              {
+                path: '/myInvoice/:createUser/:createUserName/:companyName',
+                name: 'myInvoice',
+                component: () => import('@/views/invoice/invoiceLibrary/myInvoice.vue'),
+                meta: { title: '发票明细', keepAlive: true, hidden: true }
+              },
+              {
+                path: '/uploadMyInvoice/:createUser/:createUserName/:companyName',
+                name: 'uploadMyInvoice',
+                component: () => import('@/views/invoice/invoiceLibrary/uploadMyInvoice.vue'),
+                meta: { title: '上传明细', keepAlive: true, hidden: true }
+              },
+              {
+                path: '/invoiceChecked',
+                name: 'invoiceChecked',
+                component: () => import('@/views/invoice/invoiceLibrary/invoiceChecked.vue'),
+                meta: { title: '发票再次验真', keepAlive: true, hidden: true }
+              },
+              {
+                path: '/invoiceReject',
+                name: 'invoiceReject',
+                component: () => import('@/views/invoice/invoiceLibrary/invoiceReject.vue'),
+                meta: { title: '发票管理', keepAlive: true, hidden: true }
+              },
+              {
+                path: '/dayTotalMoneyDetails/:createUserName/:totalMoney/:procinstIds',
+                name: 'dayTotalMoneyDetails',
+                component: () => import('@/views/invoice/invoiceLibrary/dayTotalMoneyDetails.vue'),
+                meta: { title: '抵票报销总额', keepAlive: true, hidden: true }
+              }
+            ]
+          }
+        ]
+      },
+      //system
+      {
+        path: '/system',
+        name: 'system',
+        component: RouteView,
+        meta: { title: '系统', icon: 'setting', permission: ['system', 'test'] },
+        children: [
+          {
+            path: '/system/systemManage',
+            name: 'systemManage',
+            meta: { title: '系统管理', icon: 'caret-down', permission: ['system', 'test'] },
+            component: { render: h => h('router-view') },
+            children: []
+          }
+        ]
+      }
     ]
   },
   {
-    path: '/workflow/test',
+    path: '/vueApp1/test',
     name: 'qiankunbase1',
     component: () => import('@/views/test/test.vue'),
     meta: { title: '测试', keepAlive: true}
